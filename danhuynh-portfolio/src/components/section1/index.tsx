@@ -25,7 +25,7 @@ const Section1 = () => {
   }, []);
 
   return (
-    <div className='h-screen flex overflow-hidden'>
+    <div className='h-screen flex'>
       <div className='absolute w-full h-full bg-slate-950/[.6] flex justify-center pb-[2rem] px-5'>
         <div className='text-white absolute opacity-[0.6] text-sm top-4 left-4'>
           Code by Danh Huynh
@@ -56,7 +56,7 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-      <div className='h-full flex-1 hidden sm:block'>
+      <div className='h-full flex-1 hidden sm:block overflow-hidden'>
         <video
           autoPlay
           muted
@@ -67,8 +67,9 @@ const Section1 = () => {
           <source src={Video2} type='video/mp4' />
         </video>
       </div>
-      <div className='h-full flex-1'>
+      <div className='h-full flex-1 overflow-hidden'>
         <video
+          playsInline
           autoPlay
           muted
           loop
@@ -78,7 +79,7 @@ const Section1 = () => {
           <source src={Video1} type='video/mp4' />
         </video>
       </div>
-      <div className='h-full flex-1 hidden sm:block'>
+      <div className='h-full flex-1 hidden sm:block overflow-hidden'>
         <video
           autoPlay
           muted
