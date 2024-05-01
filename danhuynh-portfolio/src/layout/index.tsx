@@ -1,9 +1,5 @@
-import { ReactNode } from 'react';
 import { animate } from 'motion';
 import { Outlet, useNavigate } from 'react-router-dom';
-
-// Images
-import Avatar from '../../assets/images/avatar.jpg';
 
 const Layout = () => {
   const navigate = useNavigate();
