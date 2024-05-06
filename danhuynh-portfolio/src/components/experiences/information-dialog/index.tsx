@@ -1,14 +1,5 @@
-import {
-  Dispatch,
-  Fragment,
-  SetStateAction,
-  useEffect,
-  useRef,
-  useState,
-} from 'react';
-import { animate } from 'motion';
+import { Dispatch, Fragment, SetStateAction } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 
 // Constants
 import { Milestone } from '../../../constants';

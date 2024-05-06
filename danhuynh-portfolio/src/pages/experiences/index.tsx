@@ -1,7 +1,5 @@
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { animate } from 'motion';
-import { Dialog, Transition } from '@headlessui/react';
-import { ExclamationTriangleIcon } from '@heroicons/react/24/outline';
 
 // Components
 import InformationDialog from '../../components/experiences/information-dialog';
