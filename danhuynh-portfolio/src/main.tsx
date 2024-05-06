@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // Components
 import Section1 from './components/section1';
 import SkillsPage from './pages/skills';
+import ExperiencesPage from './pages/experiences';
 
 // Styles
 import './index.css';
@@ -17,6 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route element={<Layout />}>
           <Route path='/' element={<Section1 />} />
           <Route path='/skills' element={<SkillsPage />} />
+          <Route path='/experiences' element={<ExperiencesPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

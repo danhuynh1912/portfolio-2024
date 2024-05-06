@@ -56,6 +56,8 @@ const SkillsPage = () => {
 
   return (
     <>
+      <div className='navigate ease-[cubic-bezier(0.25, 1, 0.5, 1)] z-30 absolute right-0 bg-white h-screen w-0'></div>
+
       <div className='navigate-end ease-[cubic-bezier(0.25, 1, 0.5, 1)] z-30 absolute left-0 bg-white h-screen w-screen'></div>
       <div className='skills-page h-screen w-screen bg-black overflow-hidden'>
         {/* <div className='absolute rounded-full w-[20rem] h-[20rem] bg-cyan-700' />
