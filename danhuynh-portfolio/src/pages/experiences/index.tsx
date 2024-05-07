@@ -45,9 +45,9 @@ const SkillsPage = () => {
         <img
           src={FPT}
           alt='fpt-background'
-          className='absolute pointer-events-none z-[2] top-[-10rem] lg:top-[-14rem] xl:top-[-20rem] 2xl:top-[-26rem] opacity-[0.3] left-0 object-cover w-screen 2xl:scale-[1.3] origin-left'
+          className='absolute hidden lg:block pointer-events-none z-[2] top-[-10rem] lg:top-[-14rem] xl:top-[-20rem] 2xl:top-[-26rem] opacity-[0.3] left-0 object-cover w-screen 2xl:scale-[1.3] origin-left'
         />
-        <div className='z-[1] absolute top-0 backdrop-blur-lg w-full h-full flex gap-5 justify-center items-end text-white bg-[#28211278]'>
+        <div className='z-[1] absolute top-0 backdrop-blur-lg w-full h-full hidden lg:flex gap-5 justify-center items-end text-white bg-[#28211278]'>
           <div className='flex mb-[6rem]'>
             {timeline.map((item, index) => {
               const startEvents = events.filter(

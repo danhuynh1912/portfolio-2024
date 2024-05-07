@@ -57,7 +57,6 @@ const SkillsPage = () => {
   return (
     <>
       <div className='navigate ease-[cubic-bezier(0.25, 1, 0.5, 1)] z-30 absolute right-0 bg-white h-screen w-0'></div>
-
       <div className='navigate-end ease-[cubic-bezier(0.25, 1, 0.5, 1)] z-30 absolute left-0 bg-white h-screen w-screen'></div>
       <div className='skills-page h-screen w-screen bg-black overflow-hidden'>
         {/* <div className='absolute rounded-full w-[20rem] h-[20rem] bg-cyan-700' />
@@ -67,7 +66,46 @@ const SkillsPage = () => {
           alt='cyan-background'
           className='w-full h-full scale-[2.5] origin-left'
         />
-        <div className='z-[1] absolute top-0 backdrop-blur-lg w-full h-full flex gap-5 justify-center items-center text-white bg-[#28211278]'>
+        <div className='text-white bg-[#28211278] z-[1] absolute top-0 bottom-0 backdrop-blur-lg w-full overflow-auto p-4 pt-[4rem] flex lg:hidden flex-col gap-4'>
+          <div className='text-center font-semibold text-4xl'>Skills</div>
+          <div className='p-4 border border-gray-500 rounded-md bg-[#ffffff1c]'>
+            <div className=''>Frontend (Main)</div>
+            <div className='grid grid-cols-2 gap-4 mt-3'>
+              {frontendSkills.map((item) => (
+                <div
+                  key={item.id}
+                  className='flex items-center gap-3 border border-gray-500 rounded-md p-3 shadow-lg'
+                >
+                  <img
+                    src={item.logo}
+                    alt='skill'
+                    className='min-w-[4rem] min-h-[4rem] w-[4rem] h-[4rem] rounded-full object-cover'
+                  />
+                  <div>{item.name}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className='p-4 border border-gray-500 rounded-md bg-[#ffffff1c]'>
+            <div className=''>Backend and others</div>
+            <div className='grid grid-cols-2 gap-4 mt-3'>
+              {backendSkills.map((item) => (
+                <div
+                  key={item.id}
+                  className='flex items-center gap-3 border border-gray-500 rounded-md p-3 shadow-lg'
+                >
+                  <img
+                    src={item.logo}
+                    alt='skill'
+                    className='w-[4rem] h-[4rem] rounded-full object-cover'
+                  />
+                  <div>{item.name}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className='z-[1] absolute top-0 backdrop-blur-lg w-full h-full hidden lg:flex gap-5 justify-center items-center text-white bg-[#28211278]'>
           <div className='skills p-0 w-0 h-0 border border-gray-500 rounded-md bg-[#ffffff1c]'>
             <div className='skills-content opacity-0'>Frontend (Main)</div>
             <div className='skills-content opacity-0 grid grid-cols-2 gap-4 mt-3'>
